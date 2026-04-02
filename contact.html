@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Header -->
+ <header id="header" class="header-transparent fixed-top">
+   <nav class="navbar navbar-expand-lg navbar-dark">
+     <div class="container">
+       <a class="navbar-brand" href="index.html">
+         <span class="logo-text">Wanderlust Travel旅行社</span>
+       </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ms-auto">
+           <li class="nav-item">
+             <a class="nav-link" href="index.html">主页</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="about.html">关于我们</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="news.html">新闻</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link " href="cases.html">成功案例</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link current" href="contact.html">联系</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link btn-register" href="register.html">注册</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </header>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background-image: url('https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>联系我们</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">全部</a></li>
+              <li class="breadcrumb-item active" aria-current="page">联系</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section id="contact-info" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>联系我们</h2>
+        <p>我们很乐意听取您的意见。以下是联系我们的方法。</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="contact-box">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>我们的位置</h3>
+            <p>北京市某街道</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-box">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>电话号码</h3>
+            <p>0000-123-4567</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-box">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>电子邮件地址</h3>
+            <p>123456789@163.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form and Map -->
+  <section id="contact-form-map" class="section-padding bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="contact-form-container">
+            <h3>给我们留言</h3>
+            <p>对我们的旅行套餐有疑问或需要帮助计划您的下一次冒险？请填写下面的表格，我们的团队会尽快回复您。</p>
+            <form id="contactForm" class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">您的姓名</label>
+                    <input type="text" class="form-control" id="name" placeholder="输入您的姓名" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">电子邮件地址</label>
+                    <input type="email" class="form-control" id="email" placeholder="输入您的电子邮件" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">电话号码</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="输入您的电话号码">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">主题</label>
+                    <select class="form-select" id="subject" required>
+                      <option value="" selected disabled>选择主题</option>
+                      <option value="General Inquiry">一般查询</option>
+                      <option value="Booking Information">预定查询</option>
+                      <option value="Destination Question">目的地问题</option>
+                      <option value="Feedback">反馈</option>
+                      <option value="Other">其他</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">您的信息</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="输入您的信息" required></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="privacy" required>
+                <label class="form-check-label" for="privacy">我同意隐私政策和服务条款</label>
+              </div>
+              <button type="submit" class="btn btn-primary">发送信息</button>
+              <div class="form-message mt-3"></div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="map-container">
+            <h3>我们的办公地点</h3>
+            <div class="office-info mb-4">
+              <p><strong>工作时间：</strong> 周一至周五，上午 9：00 - 下午 6：00</p>
+              <p><strong>周末：</strong> 周六，上午 10：00 - 下午 4：00（周日休息）</p>
+            </div>
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445135!2d-74.25986613799748!3d40.69714941774136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1622212179734!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>常见问题解答</h2>
+        <p>查找有关我们服务的常见问题的解答</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  我如何通过 Wanderlust Travel 预订旅行？
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                 通过 Wanderlust Travel 预订行程非常简单！您可以在线浏览我们的目的地，然后直接通过我们的网站预订，拨打我们的预订热线 000-123-4567，或填写本页面上的联系表格，让旅行顾问为您提供帮助。我们建议您直接与我们联系以获取定制行程或特殊要求。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  你们接受哪些付款方式？
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+					我们接受各种付款方式，包括所有主要信用卡、微信、支付宝、银行转账。对于某些目的地，我们还提供付款计划，允许您在出发日期之前分期付款。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 你们的取消政策是什么？
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+				 我们的取消政策因套餐和目的地而异。一般来说，出发前 60+ 天取消预订将获得全额退款，但需扣除少量管理费。出发前 30-59 天取消将获得 75% 的退款，15-29 天将获得 50% 的退款，出发前 14 天内取消不予退款。我们强烈建议您购买旅行保险，以防止意外取消
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  你们提供旅行保险吗？
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+					是的，我们通过值得信赖的合作伙伴提供全面的旅行保险。我们的保险套餐通常涵盖行程取消/中断、医疗紧急情况、行李丢失、旅行延误等。我们强烈建议您为所有国际旅行购买 Travel 保险。我们的旅行顾问可以帮助您为您的特定旅程选择合适的保险。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  您能满足特殊饮食要求吗？
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+					绝对！我们可以满足各种饮食要求，包括素食、纯素食、无麸质、犹太洁食、清真和食物过敏。请在预订时告知我们任何饮食限制，以便我们在您的旅程中与酒店、餐厅和其他服务提供商进行必要的安排。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <p>在这里没有看到您的问题？直接联系我们，我们很乐意为您提供帮助！</p>
+        <a href="#contact-form-map" class="btn btn-primary scroll-to">提出您的问题</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Branches -->
+  <section id="branches" class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>我们的全球办事处</h2>
+        <p>欢迎莅临我们的国际地点</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="branch-card">
+            <div class="branch-image">
+              <img src="https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="New York Office">
+            </div>
+            <div class="branch-content">
+              <h3>纽约</h3>
+              <ul class="branch-info">
+                <li><i class="fas fa-map-marker-alt"></i>纽约某街道</li>
+                <li><i class="fas fa-phone-alt"></i> 000-123-4567</li>
+                <li><i class="fas fa-envelope"></i> 123138131@163.com/li>
+                <li><i class="far fa-clock"></i> 周一至周五：上午 9 点至下午 6 点，周六：上午 10 点至下午 4 点</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="branch-card">
+            <div class="branch-image">
+              <img src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="London Office">
+            </div>
+            <div class="branch-content">
+              <h3>伦敦</h3>
+              <ul class="branch-info">
+                <li><i class="fas fa-map-marker-alt"></i>英国伦敦某街道</li>
+                <li><i class="fas fa-phone-alt"></i>000-1234 5678</li>
+                <li><i class="fas fa-envelope"></i> 4242536@163.com</li>
+                <li><i class="far fa-clock"></i> 周一至周五：上午 9 点至下午 6 点，周六：上午 10 点至下午 4 点</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="branch-card">
+            <div class="branch-image">
+              <img src="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Tokyo Office">
+            </div>
+            <div class="branch-content">
+              <h3>莫斯科</h3>
+              <ul class="branch-info">
+                <li><i class="fas fa-map-marker-alt"></i> 俄罗斯 莫斯科某街道</li>
+                <li><i class="fas fa-phone-alt"></i> 000-1234 5678</li>
+                <li><i class="fas fa-envelope"></i> 4256375@163.com</li>
+                <li><i class="far fa-clock"></i> 周一至周五：上午 9 点至下午 6 点，周六：上午 10 点至下午 4 点</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="section-padding bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-7">
+          <div class="cta-content">
+            <h2>准备好开始您的冒险了吗？</h2>
+            <p>立即注册以接收独家旅行优惠和个性化推荐。</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <div class="cta-button text-md-end">
+            <a href="register.html" class="btn btn-light btn-lg">立刻注册</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h3>关于 Wanderlust</h3>
+              <p>我们是一家高级旅行社，致力于通过个性化服务和注重细节提供难忘的旅行体验。</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-qq"></i></a>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+                <a href="#"><i class="fas fa-newspaper"></i></a>
+                <a href="#"><i class="fas fa-plane"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-widget">
+              <h3>快速链接</h3>
+              <ul class="footer-links">
+                <li><a href="index.html">家</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="cases.html">目的地</a></li>
+                <li><a href="news.html">旅游博客</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3>热门目的地</h3>
+              <ul class="footer-links">
+                <li><a href="#">巴厘岛， 印度尼西亚</a></li>
+                <li><a href="#">中国 北京</a></li>
+                <li><a href="#">希腊 圣托里尼</a></li>
+                <li><a href="#">秘鲁马丘比丘</a></li>
+                <li><a href="#">法国 巴黎</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3>联系信息</h3>
+              <ul class="contact-info">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>北京市某街道</p>
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <p>0000-123-4567</p>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <p>123456789@163.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy;2025 年 Wanderlust Travel。保留所有权利</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="footer-bottom-links">
+              <li><a href="#">隐私策略</a></li>
+              <li><a href="#">条款和条件</a></li>
+              <li><a href="#">网站地图</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

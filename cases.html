@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>成功案例</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="logo-text">Wanderlust Travel旅行社</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">主页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">关于我们</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">新闻</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="cases.html">成功案例</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">联系</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-register" href="register.html">注册</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Page Header -->
+  <section class="page-header" style="background-image: url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>成功案例</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">全部</a></li>
+              <li class="breadcrumb-item active" aria-current="page">成功案例</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>我们的目的地投资组合</h2>
+        <p>探索我们精心策划的令人叹为观止的目的地系列</p>
+      </div>
+      
+      <!-- Destination Filters -->
+      <div class="destination-filters text-center">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="beach">海滩</button>
+        <button class="filter-btn" data-filter="mountain">山脉</button>
+        <button class="filter-btn" data-filter="city">城市</button>
+        <button class="filter-btn" data-filter="countryside">农村</button>
+        <button class="filter-btn" data-filter="island">岛屿</button>
+      </div>
+      
+      <!-- Destinations Grid -->
+      <div class="row destination-grid">
+        <div class="col-md-4 destination-item" data-category="beach">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="巴厘岛， 印度尼西亚">
+              <div class="destination-overlay">
+                <div class="destination-price">￥899起</div>
+              </div>
+            </div>
+            <div class="destination-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(127 条评论)</span>
+              </div>
+              <h3>巴厘岛， 印度尼西亚</h3>
+              <p>热带天堂，拥有迷人的海滩、水稻梯田和丰富的文化遗产。</p>
+              <div class="destination-meta">
+                <span><i class="far fa-clock"></i> 7 天</span>
+                <span><i class="fas fa-user-friends"></i> 最多人数: 10</span>
+              </div>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#destinationModal1">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 destination-item" data-category="city">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="./img/OIP-C.jpg" alt="Paris, France">
+              <div class="destination-overlay">
+                <div class="destination-price">￥749</div>
+              </div>
+            </div>
+            <div class="destination-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(215 篇评论)</span>
+              </div>
+              <h3>法国 巴黎</h3>
+              <p>这座光之城拥有标志性的地标、世界一流的美食和艺术珍品</p>
+              <div class="destination-meta">
+                <span><i class="far fa-clock"></i> 5 天</span>
+                <span><i class="fas fa-user-friends"></i> 最多人数: 15</span>
+              </div>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#destinationModal2">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 destination-item" data-category="mountain">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Swiss Alps">
+              <div class="destination-overlay">
+                <div class="destination-price">￥1,099起</div>
+              </div>
+            </div>
+            <div class="destination-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(98 篇评论)</span>
+              </div>
+              <h3>瑞士阿尔卑斯山</h3>
+              <p>令人叹为观止的山景、迷人的村庄和世界级的滑雪场。</p>
+              <div class="destination-meta">
+                <span><i class="far fa-clock"></i> 8 天</span>
+                <span><i class="fas fa-user-friends"></i> 最多人数: 12</span>
+              </div>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#destinationModal3">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 destination-item" data-category="island">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Santorini, Greece">
+              <div class="destination-overlay">
+                <div class="destination-price">￥1,299起</div>
+              </div>
+            </div>
+            <div class="destination-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(186 篇评论)</span>
+              </div>
+              <h3>希腊 圣托里尼</h3>
+              <p>标志性的白色建筑、迷人的日落和清澈的海水。</p>
+              <div class="destination-meta">
+                <span><i class="far fa-clock"></i> 6 天</span>
+                <span><i class="fas fa-user-friends"></i> 最多人数: 8</span>
+              </div>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#destinationModal4">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 destination-item" data-category="city">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Kyoto, Japan">
+              <div class="destination-overlay">
+                <div class="destination-price">￥1,499起</div>
+              </div>
+            </div>
+            <div class="destination-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(143 篇评论)</span>
+              </div>
+              <h3>中国 重庆</h3>
+              <p>重庆, 这个美好的城市，有着蜿蜒曲折的山路，香飘溢的火锅和美丽的嘉陵江。</p>
+              <div class="destination-meta">
+                <span><i class="far fa-clock"></i> 9 天</span>
+                <span><i class="fas fa-user-friends"></i> 最多人数: 10</span>
+              </div>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#destinationModal5">查看详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 destination-item" data-category="countryside">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="https://images.pexels.com/photos/731082/pexels-photo-731082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Tuscany, Italy">
+              <div class="destination-overlay">
+                <div class="destination-price">￥999起</div>
+              </div>
+            </div>
+            <div class="destination-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(112 篇评论)</span>
+              </div>
+              <h3>意大利 托斯卡纳</h3>
+              <p>连绵起伏的丘陵、葡萄园、中世纪小镇和世界闻名的美食。</p>
+              <div class="destination-meta">
+                <span><i class="far fa-clock"></i> 8 天</span>
+                <span><i class="fas fa-user-friends"></i> 最多人数: 12</span>
+              </div>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#destinationModal6">查看详情</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section id="success-stories" class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>客户成功案例</h2>
+        <p>来自我们满意的旅客的真实体验</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="story-card">
+            <div class="story-header">
+              <div class="story-image">
+                <img src="img/重庆.jpg" alt="">
+              </div>
+              <div class="story-meta">
+                <h3>肖先生</h3>
+                <p>J山城重庆之旅</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="story-content">
+              <p>"重庆这个火辣辣的山城，曾经的陪都，现在的直辖市。这里有可以媲美香港的无敌夜景，有乱人眼球的吸睛美女，还有热腾腾的火锅和酣畅淋漓的冰镇啤酒…整理了一下具有代表性的“最”重庆的好去处，带给你极致的重庆旅行体验，跟着这份重庆最地图去浪吧！</p>
+              <div class="story-gallery">
+                <img src="https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Japan Trip 1" class="img-fluid">
+                <img src="https://images.pexels.com/photos/590478/pexels-photo-590478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Japan Trip 2" class="img-fluid">
+                <img src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Japan Trip 3" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="story-card">
+            <div class="story-header">
+              <div class="story-image">
+                <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Emma Rodriguez">
+              </div>
+              <div class="story-meta">
+                <h3>罗女士</h3>
+                <p>哥斯达黎加探险</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="story-content">
+              <p>"“作为一名单身女性旅行者，我对预订哥斯达黎加的冒险之旅有点担心。然而，Wanderlust Travel 从一开始就让我感到安全和自信。我的旅行顾问 David 解决了我的所有担忧，并制定了一个既令人兴奋又安全的行程。</p>
+              <p>穿越云雾森林的高空滑索、在曼努埃尔安东尼奥 （Manuel Antonio） 观赏野生动物以及在阿雷纳尔火山 （Arenal Volcano） 附近的温泉中放松身心，这些都是令人难以置信的经历。小团体规模意味着我结交了好朋友，同时仍然得到导游的个人关注。我不能推荐 Wanderlust Travel 适合寻求冒险的独行旅客！”</p>
+              <div class="story-gallery">
+                <img src="https://images.pexels.com/photos/2739013/pexels-photo-2739013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Costa Rica Trip 1" class="img-fluid">
+                <img src="https://images.pexels.com/photos/2695232/pexels-photo-2695232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Costa Rica Trip 2" class="img-fluid">
+                <img src="https://images.pexels.com/photos/1829980/pexels-photo-1829980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Costa Rica Trip 3" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="story-card">
+            <div class="story-header">
+              <div class="story-image">
+                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="David & Emily Thompson">
+              </div>
+              <div class="story-meta">
+                <h3>萧先生</h3>
+                <p>希腊蜜月套餐</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <div class="story-content">
+              <p>“计划我们的蜜月是我们婚礼准备中最紧张的方面之一，直到我们找到了 Wanderlust Travel。他们的蜜月专家 Maria 为我们减轻了所有压力，并设计了一次超出我们预期的希腊浪漫之旅。</p>
+              <p>圣托里尼岛的私人日落巡游绝对是神奇的，米科诺斯岛的海滨别墅提供了奢华与隐私的完美平衡。每次换乘都是无缝的，餐厅的推荐也很准确。多亏了 Wanderlust，我们带着难忘的回忆开始了我们的婚姻，我们将永远珍惜这些回忆</p>
+              <div class="story-gallery">
+                <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Greece Trip 1" class="img-fluid">
+                <img src="https://images.pexels.com/photos/163864/santorini-oia-greece-travel-163864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Greece Trip 2" class="img-fluid">
+                <img src="https://images.pexels.com/photos/1001435/pexels-photo-1001435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Greece Trip 3" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="story-card">
+            <div class="story-header">
+              <div class="story-image">
+                <img src="https://images.pexels.com/photos/1036620/pexels-photo-1036620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="The Wilson Family">
+              </div>
+              <div class="story-meta">
+                <h3>白氏一家</h3>
+                <p>非洲野生动物园探险</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="story-content">
+              <p>“带我们的三个孩子（8 岁、12 岁和 15 岁）去非洲旅行是我们多年来的梦想，但我们被物流和安全问题吓倒了。Wanderlust Travel 通过他们专业规划的肯尼亚和坦桑尼亚家庭野生动物园套餐使这个梦想成为现实。</p>
+              <p>住宿适合家庭入住，同时仍然提供真实的体验。我们的导游对孩子们特别好，使教育方面变得有趣和引人入胜。目睹大迁徙，看到孩子们发现第一只狮子时的脸色，是我们永远不会忘记的回忆。这次旅行让我们的家庭更加紧密，并向我们的孩子灌输了对旅行和野生动物保护的热爱</p>
+              <div class="story-gallery">
+                <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Safari Trip 1" class="img-fluid">
+                <img src="https://images.pexels.com/photos/620246/pexels-photo-620246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Safari Trip 2" class="img-fluid">
+                <img src="https://images.pexels.com/photos/2853936/pexels-photo-2853936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Safari Trip 3" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section id="statistics" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>我们在数字上的成功</h2>
+        <p>衡量我们对卓越的承诺</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <div class="stat-box">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-number" data-count="50000">0</div>
+            <h3>快乐的旅客</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-box">
+            <div class="stat-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <div class="stat-number" data-count="120">0</div>
+            <h3>目的地</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-box">
+            <div class="stat-icon">
+              <i class="fas fa-plane-departure"></i>
+            </div>
+            <div class="stat-number" data-count="3500">0</div>
+            <h3>已完成的旅行</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-box">
+            <div class="stat-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="stat-number" data-count="28">0</div>
+            <h3>行业奖项</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Modals -->
+  <div class="modal fade" id="destinationModal1" tabindex="-1" aria-labelledby="destinationModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="destinationModalLabel1">巴厘岛 印度尼西亚</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="destination-modal-content">
+            <div class="destination-modal-gallery">
+              <div class="row">
+                <div class="col-md-8">
+                  <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Bali, Indonesia" class="img-fluid main-image">
+                </div>
+                <div class="col-md-4">
+                  <div class="gallery-thumbs">
+                    <img src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Bali, Indonesia" class="img-fluid thumb">
+                    <img src="https://images.pexels.com/photos/1694621/pexels-photo-1694621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Bali, Indonesia" class="img-fluid thumb">
+                    <img src="https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Bali, Indonesia" class="img-fluid thumb">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="destination-modal-info">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="destination-description">
+                    <h3>关于巴厘岛</h3>
+                    <p>巴厘岛是一个热带天堂，以其迷人的海滩、郁郁葱葱的水稻梯田、火山和丰富的文化遗产而闻名。这个印度尼西亚岛屿为每位旅行者提供了一些东西，从豪华度假村和充满活力的夜生活到精神度假胜地和传统村庄。</p>
+                    <h4>突出景点</h4>
+                    <ul>
+                      <li>探索乌布神圣的猴子森林和古老的寺庙</li>
+                      <li>在努沙杜瓦和水明漾的原始海滩上放松身心</li>
+                      <li>体验传统的巴厘岛舞蹈表演</li>
+                      <li>跋涉穿过德格拉朗迷人的水稻梯田</li>
+                      <li>在艾湄湾浮潜时探索海底世界</li>
+                      <li>爬上巴杜尔山欣赏壮观的日出景色</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="destination-details">
+                    <div class="detail-item">
+                      <h5>旅游时间</h5>
+                      <p>7 天 / 6 晚</p>
+                    </div>
+                    <div class="detail-item">
+                      <h5>小队规模</h5>
+                      <p>最多10人</p>
+                    </div>
+                    <div class="detail-item">
+                      <h5>价格包括</h5>
+                      <ul>
+                        <li>住宿</li>
+                        <li>每日早餐</li>
+                        <li>机场接送</li>
+                        <li>当地导游</li>
+                        <li>入场费</li>
+                      </ul>
+                    </div>
+                    <div class="detail-item">
+                      <h5>起价</h5>
+                      <div class="price">￥899</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-primary">立即询问</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section id="cta" class="section-padding bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-7">
+          <div class="cta-content">
+            <h2>准备好创造自己的成功故事了吗？</h2>
+            <p>今天就联系我们，开始规划您的梦想假期体验。</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <div class="cta-button text-md-end">
+            <a href="contact.html" class="btn btn-light btn-lg">今天就联系我们</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ <footer class="footer">
+   <div class="footer-top">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-4 col-md-6">
+           <div class="footer-widget">
+             <h3>关于 Wanderlust</h3>
+             <p>我们是一家高级旅行社，致力于通过个性化服务和注重细节提供难忘的旅行体验。</p>
+             <div class="social-links">
+               <a href="#"><i class="fab fa-qq"></i></a>
+               <a href="#"><i class="fab fa-weixin"></i></a>
+               <a href="#"><i class="fab fa-weibo"></i></a>
+               <a href="#"><i class="fas fa-newspaper"></i></a>
+               <a href="#"><i class="fas fa-plane"></i></a>
+             </div>
+           </div>
+         </div>
+         <div class="col-lg-2 col-md-6">
+           <div class="footer-widget">
+             <h3>快速链接</h3>
+             <ul class="footer-links">
+               <li><a href="index.html">家</a></li>
+               <li><a href="about.html">关于我们</a></li>
+               <li><a href="cases.html">目的地</a></li>
+               <li><a href="news.html">旅游博客</a></li>
+               <li><a href="contact.html">联系我们</a></li>
+             </ul>
+           </div>
+         </div>
+         <div class="col-lg-3 col-md-6">
+           <div class="footer-widget">
+             <h3>热门目的地</h3>
+             <ul class="footer-links">
+               <li><a href="#">巴厘岛， 印度尼西亚</a></li>
+               <li><a href="#">中国 北京</a></li>
+               <li><a href="#">希腊 圣托里尼</a></li>
+               <li><a href="#">秘鲁马丘比丘</a></li>
+               <li><a href="#">法国 巴黎</a></li>
+             </ul>
+           </div>
+         </div>
+         <div class="col-lg-3 col-md-6">
+           <div class="footer-widget">
+             <h3>联系信息</h3>
+             <ul class="contact-info">
+               <li>
+                 <i class="fas fa-map-marker-alt"></i>
+                 <p>北京市某街道</p>
+               </li>
+               <li>
+                 <i class="fas fa-phone-alt"></i>
+                 <p>0000-123-4567</p>
+               </li>
+               <li>
+                 <i class="fas fa-envelope"></i>
+                 <p>123456789@163.com</p>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="footer-bottom">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6">
+           <p>&copy;2025 年 Wanderlust Travel。保留所有权利</p>
+         </div>
+         <div class="col-md-6">
+           <ul class="footer-bottom-links">
+             <li><a href="#">隐私策略</a></li>
+             <li><a href="#">条款和条件</a></li>
+             <li><a href="#">网站地图</a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

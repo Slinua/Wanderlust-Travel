@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旅游新闻和博客</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="logo-text">Wanderlust Travel旅行社</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">主页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">关于我们</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="news.html">新闻</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="cases.html">成功案例</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">联系</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-register" href="register.html">注册</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background-image: url('https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>旅游新闻和博客</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">主页</a></li>
+              <li class="breadcrumb-item active" aria-current="page">新闻</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <!-- Main Content -->
+        <div class="col-lg-8">
+          <!-- News Filters -->
+          <div class="news-filters">
+            <div class="category-filters">
+              <button class="filter-btn active" data-filter="all">所有</button>
+              <button class="filter-btn" data-filter="travel-tips">旅行小贴士</button>
+              <button class="filter-btn" data-filter="destinations">目的地</button>
+              <button class="filter-btn" data-filter="company-news">公司新闻</button>
+              <button class="filter-btn" data-filter="cultural">公司文化</button>
+              <button class="filter-btn" data-filter="sustainable">可持续旅行</button>
+            </div>
+            <div class="search-box">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="搜索新闻....">
+                  <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Featured News -->
+          <div class="featured-news">
+            <div class="news-card featured">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="news-image">
+                    <img src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Featured News">
+                    <div class="news-date">
+                      <span class="day">20</span>
+                      <span class="month">五月</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="news-content">
+                    <div class="news-category">公司新闻</div>
+                    <h3><a href="#">Wanderlust Travel 宣布新的可持续旅游倡议</a></h3>
+                    <p>我们很自豪地宣布我们新的可持续发展计划，旨在减少旅游业对环境的影响，同时提高对当地社区的积极效益。</p>
+                    <div class="news-meta">
+                      <span><i class="fas fa-user"></i> 管理员</span>
+                      <span><i class="fas fa-comments"></i> 24 条评论</span>
+                    </div>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- News Grid -->
+          <div class="news-grid">
+            <div class="row">
+              <div class="col-md-6 news-item" data-category="travel-tips">
+                <div class="news-card">
+                  <div class="news-image">
+                    <img src="https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="News 1">
+                    <div class="news-date">
+                      <span class="day">15</span>
+                      <span class="month">五月</span>
+                    </div>
+                  </div>
+                  <div class="news-content">
+                    <div class="news-category">旅行小贴士</div>
+                    <h3><a href="#">2025年10大必游目的地</a></h3>
+                    <p>发现来年应该在您的旅行清单上的热门目的地。</p>
+                    <div class="news-meta">
+                      <span><i class="fas fa-user"></i>作者：张教授</span>
+                      <span><i class="fas fa-comments"></i> 18 评论</span>
+                    </div>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 news-item" data-category="cultural">
+                <div class="news-card">
+                  <div class="news-image">
+                    <img src="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="News 2">
+                    <div class="news-date">
+                      <span class="day">03</span>
+                      <span class="month">五月</span>
+                    </div>
+                  </div>
+                  <div class="news-content">
+                    <div class="news-category">文化体验</div>
+                    <h3><a href="#">东南亚的沉浸式文化体验</a></h3>
+                    <p>体验原汁原味的文化传统，并与东南亚的当地社区建立联系。</p>
+                    <div class="news-meta">
+                      <span><i class="fas fa-user"></i> 作者：李教授</span>
+                      <span><i class="fas fa-comments"></i> 12 条评论</span>
+                    </div>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 news-item" data-category="sustainable">
+                <div class="news-card">
+                  <div class="news-image">
+                    <img src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png?auto=compress&cs=tinysrgb&w=1260&h=750" alt="News 3">
+                    <div class="news-date">
+                      <span class="day">28</span>
+                      <span class="month">四月</span>
+                    </div>
+                  </div>
+                  <div class="news-content">
+                    <div class="news-category">可持续旅行</div>
+                    <h3><a href="#">环保旅行：可程序探险小贴士</a></h3>
+                    <p>了解如何最大限度地减少对环境的影响，同时仍然享受美妙的旅行体验。</p>
+                    <div class="news-meta">
+                      <span><i class="fas fa-user"></i> 作者：宋小姐</span>
+                      <span><i class="fas fa-comments"></i> 9 条评论</span>
+                    </div>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 news-item" data-category="destinations">
+                <div class="news-card">
+                  <div class="news-image">
+                    <img src="https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="News 4">
+                    <div class="news-date">
+                      <span class="day">20</span>
+                      <span class="month">四月</span>
+                    </div>
+                  </div>
+                  <div class="news-content">
+                    <div class="news-category">目的地</div>
+                    <h3><a href="#">欧洲隐藏的瑰宝：人迹罕至的目的地</a></h3>
+                    <p>逃离人群，探索这些迷人、鲜为人知的欧洲目的地。</p>
+                    <div class="news-meta">
+                      <span><i class="fas fa-user"></i> 作者：戴教授</span>
+                      <span><i class="fas fa-comments"></i> 15 条评论</span>
+                    </div>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 news-item" data-category="travel-tips">
+                <div class="news-card">
+                  <div class="news-image">
+                    <img src="https://images.pexels.com/photos/2507007/pexels-photo-2507007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="News 5">
+                    <div class="news-date">
+                      <span class="day">15</span>
+                      <span class="month">四月</span>
+                    </div>
+                  </div>
+                  <div class="news-content">
+                    <div class="news-category">旅行小贴士</div>
+                    <h3><a href="#">适合各类旅客的基本行李打包小贴士</a></h3>
+                    <p>通过这些专家提示掌握打包的艺术，高效、轻松地为旅行做准备。</p>
+                    <div class="news-meta">
+                      <span><i class="fas fa-user"></i>作者：吴教授</span>
+                      <span><i class="fas fa-comments"></i> 22 条评论</span>
+                    </div>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 news-item" data-category="company-news">
+                <div class="news-card">
+                  <div class="news-image">
+                    <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="News 6">
+                    <div class="news-date">
+                      <span class="day">05</span>
+                      <span class="month">四月</span>
+                    </div>
+                  </div>
+                  <div class="news-content">
+                    <div class="news-category">公司新闻</div>
+                    <h3><a href="#">Wanderlust Travel 庆祝15周年卓越</a></h3>
+                    <p>加入我们，回顾 15 年来为客户创造难忘旅行体验的历程。</p>
+                    <div class="news-meta">
+                      <span><i class="fas fa-user"></i> 管理员</span>
+                      <span><i class="fas fa-comments"></i> 30 条评论</span>
+                    </div>
+                    <a href="#" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination-container">
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+          <div class="sidebar">
+            <!-- Search Widget -->
+            <div class="sidebar-widget">
+              <h3 class="widget-title">搜索</h3>
+              <div class="search-widget">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="寻找....">
+                    <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="sidebar-widget">
+              <h3 class="widget-title">类别</h3>
+              <ul class="category-list">
+                <li><a href="#">旅行小贴士 <span>(12)</span></a></li>
+                <li><a href="#">目的地 <span>(25)</span></a></li>
+                <li><a href="#">奇遇 <span>(8)</span></a></li>
+                <li><a href="#">文化体验 <span>(14)</span></a></li>
+                <li><a href="#">可持续旅行 <span>(10)</span></a></li>
+                <li><a href="#">公司新闻 <span>(6)</span></a></li>
+              </ul>
+            </div>
+
+            <!-- Recent Posts Widget -->
+            <div class="sidebar-widget">
+              <h3 class="widget-title">最近的文章</h3>
+              <div class="recent-posts">
+                <div class="recent-post">
+                  <div class="post-thumb">
+                    <img src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Recent Post">
+                  </div>
+                  <div class="post-info">
+                    <h4><a href="#">Wanderlust Travel 宣布新的可持续旅游倡议</a></h4>
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> 2025年5月20</span>
+                  </div>
+                </div>
+                <div class="recent-post">
+                  <div class="post-thumb">
+                    <img src="https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Recent Post">
+                  </div>
+                  <div class="post-info">
+                    <h4><a href="#">2025年10大比游目的地</a></h4>
+                    <span class="post-date"><i class="far fa-calendar-alt"></i>  2025年5月15</span>
+                  </div>
+                </div>
+                <div class="recent-post">
+                  <div class="post-thumb">
+                    <img src="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" alt="Recent Post">
+                  </div>
+                  <div class="post-info">
+                    <h4><a href="#">东南亚的沉浸式文化体验</a></h4>
+                    <span class="post-date"><i class="far fa-calendar-alt"></i>  2025年5月3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tags Widget -->
+            <div class="sidebar-widget">
+              <h3 class="widget-title">热门标签</h3>
+              <div class="tag-cloud">
+                <a href="#">旅行</a>
+                <a href="#">奇遇</a>
+                <a href="#">海滩</a>
+                <a href="#">山</a>
+                <a href="#">欧洲</a>
+                <a href="#">亚洲</a>
+                <a href="#">豪华</a>
+                <a href="#">预算</a>
+                <a href="#">食物</a>
+                <a href="#">摄影</a>
+                <a href="#">家庭</a>
+                <a href="#">独自旅行</a>
+              </div>
+            </div>
+
+            <!-- Subscribe Widget -->
+            <div class="sidebar-widget">
+              <h3 class="widget-title">订阅</h3>
+              <div class="subscribe-widget">
+                <p>订阅我们的时事通讯以接收最新的旅行新闻和优惠。</p>
+                <form>
+                  <div class="input-group">
+                    <input type="email" class="form-control" placeholder="您的电子邮件">
+                    <button class="btn btn-primary" type="submit">订阅</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h3>关于 Wanderlust</h3>
+              <p>我们是一家高级旅行社，致力于通过个性化服务和注重细节提供难忘的旅行体验。</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-qq"></i></a>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+                <a href="#"><i class="fas fa-newspaper"></i></a>
+                <a href="#"><i class="fas fa-plane"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-widget">
+              <h3>快速链接</h3>
+              <ul class="footer-links">
+                <li><a href="index.html">家</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="cases.html">目的地</a></li>
+                <li><a href="news.html">旅游博客</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3>热门目的地</h3>
+              <ul class="footer-links">
+                <li><a href="#">巴厘岛， 印度尼西亚</a></li>
+                <li><a href="#">中国 北京</a></li>
+                <li><a href="#">希腊 圣托里尼</a></li>
+                <li><a href="#">秘鲁马丘比丘</a></li>
+                <li><a href="#">法国 巴黎</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3>联系信息</h3>
+              <ul class="contact-info">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>北京市某街道</p>
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <p>0000-123-4567</p>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <p>123456789@163.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy;2025 年 Wanderlust Travel。保留所有权利</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="footer-bottom-links">
+              <li><a href="#">隐私策略</a></li>
+              <li><a href="#">条款和条件</a></li>
+              <li><a href="#">网站地图</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
